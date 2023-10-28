@@ -1,5 +1,5 @@
-import React from "react";
-import {View, Text, StyleSheet, TouchableHighlight} from 'react-native';
+import React from  'react' 
+import {View, Text, StyleSheet, TouchableHighlight} from 'react-native' 
 
 const Button = ({submitTodo}) => (
     <View style={styles.buttonContainer}>
@@ -10,7 +10,7 @@ const Button = ({submitTodo}) => (
             <Text style={styles.submit}>Submit</Text>
         </TouchableHighlight>
     </View>
-);
+) 
 
 const styles = StyleSheet.create({
     buttonContainer: {
@@ -33,6 +33,6 @@ const styles = StyleSheet.create({
         color: '#666666',
         fontWeight: '600'
       }
-});
+}) 
 
-export default Button;
+export default Button 

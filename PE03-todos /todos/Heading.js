@@ -1,5 +1,5 @@
-import React from "react";
-import {View, Text, StyleSheet} from 'react-native';
+import React from  'react' 
+import {View, Text, StyleSheet} from 'react-native' 
 
 const Heading = () =>(
     <View style={styles.header}>
@@ -15,8 +15,8 @@ const styles = StyleSheet.create({
         textAlign: 'center',
         fontSize: 72,
         color: 'rgba(175, 47, 47, 0.25)',
-        fontWeight: '100',
-    },
-});
+        fontWeight: '100'
+    }
+}) 
 
-export default Heading;
+export default Heading 
