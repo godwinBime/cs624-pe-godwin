@@ -1,5 +1,0 @@
-Input:              
-
-Process:                      
-
-Output:                          
