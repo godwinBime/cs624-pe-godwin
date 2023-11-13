@@ -16,14 +16,10 @@ const data = [{
 const ProfileCard = (props) => {
   const {image, name, occupation, description, onPress, showThumbnail} = props;
   let containerStyles = [styles.cardContainer]
-  let cool = [styles.cardContainer]
 
   if(showThumbnail){
     containerStyles.push(styles.cardThumbnail);
-  }
-  if(showThumbnail){
-    cool.push(styles.cardThumbnail);
-  }
+  } 
 
   return(
     <View style={[styles.container]}>
@@ -51,7 +47,7 @@ const ProfileCard = (props) => {
        </TouchableHighlight> 
 
        <TouchableHighlight onPress={onPress} style={styles.tCard} > 
-          <View style={[cool]}>
+          <View style={[containerStyles]}>
             <View style={styles.cardImageContainer}>
               <Image style={styles.cardImage} source={image}/>
             </View>
@@ -242,7 +238,10 @@ const styles = StyleSheet.create({
     margin: 50,    
     flexWrap: 'wrap',
     flex: 1,
-    flexDirection: 'row'
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingTop: 100,
+    justifyContent: 'center'
   },
   cardContainer: {
     alignItems: 'center',
